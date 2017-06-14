@@ -1,0 +1,7 @@
+<h1>This is the signup page</h1>
+<%= form_for(@user) do |f| %>
+  <%= f.text_field("user[name]", placeholder: "Enter Username") %>
+  <%= f.password_field("user[password]", placeholder: "Password")%>
+  <%= f.password_field("user[password_confirmation]", placeholder: "Confirm Password")%>
+  <%= f.submit %>
+<% end %>
